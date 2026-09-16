@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sofi Azhari Amini | Portfolio Website</title>
+  <meta name="description" content="Portofolio Sofi Azhari Amini - Mahasiswa S1 Informatika Universitas Siliwangi, UI/UX Designer & Frontend Developer.">
+  
+  <!-- Remixicon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="bg-ambient-orb orb-1"></div>
+  <div class="bg-ambient-orb orb-2"></div>
+
+  <!-- Sticky Header / Navbar -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#hero" class="logo">
+          Sofi Azhari <span class="logo-dot"></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#organization" class="nav-link">Organization</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <i class="ri-sun-line"></i>
+          </button>
+
+          <a href="./CV | SOFI AZHARI AMINI.pdf" target="_blank" class="btn-primary">
+            <span>Download CV</span>
+            <i class="ri-download-line"></i>
+          </a>
+
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Mobile Navigation">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span style="font-size: 0.85rem; font-weight: 600; color: var(--accent-light-emerald);">
+              S1 Informatics @ Siliwangi University (GPA 3.68)
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Sofi Azhari Amini</span>
+          </h1>
+
+          <p style="font-size: 1.35rem; font-weight: 600; color: var(--text-main); margin-bottom: 1rem;">
+            UI/UX Designer & Frontend Developer
+          </p>
+
+          <p class="hero-description">
+            Passionate about building intuitive digital systems, automated web solutions, and engaging visual media. Experienced in full workflow UI/UX design, REST API integration, and web applications.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+              <span>View My Work</span>
+              <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span>Contact Me</span>
+              <i class="ri-mail-send-line"></i>
+            </a>
+          </div>
+
+          <!-- Key Metrics / Stats Row -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number" data-target="3.68" data-decimals="2" data-suffix="/4.0">0</span>
+              <span class="stat-label">IPK / GPA Siliwangi</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="7" data-decimals="0" data-suffix=" Stages">0</span>
+              <span class="stat-label">Automated RAB Workflow</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="18" data-decimals="0" data-suffix="+">0</span>
+              <span class="stat-label">Figma UI Screens</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="10" data-decimals="0" data-suffix="+">0</span>
+              <span class="stat-label">Deliverables Intern</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Avatar & Graphic Card -->
+        <div class="hero-visual">
+          <div class="avatar-frame">
+            <img src="assets/profile.jpg" alt="Sofi Azhari Amini Profile" class="avatar-img">
+            
+            <div class="floating-card card-top-right">
+              <i class="ri-layout-masonry-fill" style="font-size: 1.3rem; color: var(--accent-light-emerald);"></i>
+              <div>
+                <div style="font-weight: 700;">Figma UI/UX</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Prototyping & Flow</div>
+              </div>
+            </div>
+
+            <div class="floating-card card-bottom-left">
+              <i class="ri-code-s-slash-line" style="font-size: 1.3rem; color: var(--accent-light-emerald);"></i>
+              <div>
+                <div style="font-weight: 700;">PT Telkom Intern</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Sales Assist Dev</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="ri-user-smile-line"></i> About Me
+        </div>
+        <h2 class="section-title">Tentang <span class="text-gradient">Saya</span></h2>
+        <p class="section-subtitle">
+          Mahasiswa Informatika yang berdedikasi membangun solusi digital yang estetis, terstruktur, dan efisien.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card-glass">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Profil Professional</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.2rem; line-height: 1.7;">
+            Saya, <strong>Sofi Azhari Amini</strong>, adalah mahasiswa S1 Informatika di Universitas Siliwangi (Tasikmalaya) dengan IPK <strong>3.68 / 4.00</strong>. Memiliki minat mendalam pada pengembangan sistem digital, visualisasi data, desain UI/UX, dan otomatisasi workflow.
+          </p>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+            Saya berpengalaman mengintegrasikan 2,134+ data master produk (Sales Assist Telkom), membangun antarmuka web responsif berbasis JavaScript dan REST API, serta menyusun wireframe dan prototype interaktif di Figma.
+          </p>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="./CV | SOFI AZHARI AMINI.pdf" target="_blank" class="btn-primary">
+              <i class="ri-file-paper-line"></i> Lihat PDF CV
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.2rem;">Fokus & Keahlian Utama</h3>
+          
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <i class="ri-computer-line"></i>
+              <h4>Frontend & Web Dev</h4>
+              <p>Pengembangan web otomatisasi, HTML5, CSS3, Vanilla JS, REST API.</p>
+            </div>
+
+            <div class="highlight-box">
+              <i class="ri-palette-line"></i>
+              <h4>UI/UX & Prototyping</h4>
+              <p>High-fidelity screen design, wireframing, dan user flow di Figma.</p>
+            </div>
+
+            <div class="highlight-box">
+              <i class="ri-database-2-line"></i>
+              <h4>Data & Automated RAB</h4>
+              <p>Otomatisasi alur kerja sistem, pemrosesan data, & integrasi RAB Excel.</p>
+            </div>
+
+            <div class="highlight-box">
+              <i class="ri-video-line"></i>
+              <h4>Media & Documentation</h4>
+              <p>Pengelolaan konten publikasi, video editing CapCut, dan dokumentasi event.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="ri-briefcase-line"></i> Work Experience
+        </div>
+        <h2 class="section-title">Pengalaman <span class="text-gradient">Kerja & Magang</span></h2>
+        <p class="section-subtitle">
+          Pengalaman profesional di industri teknologi dan telekomunikasi.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Telkom Indonesia Internship -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Frontend Developer & IT Intern</h3>
+                <span class="timeline-company">PT Telkom Indonesia (Persero) Tbk</span>
+              </div>
+              <span class="timeline-date">Juni – Agustus 2026</span>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem;">
+              Mengembangkan aplikasi web <strong>Sales Assist</strong> untuk mempermudah penyusunan Rencana Anggaran Biaya (RAB) dan pembuatan dashboard perbandingan.
+            </p>
+
+            <ul class="timeline-list">
+              <li>Mengembangkan aplikasi web Sales Assist untuk mempermudah penyusunan RAB, mengintegrasikan 2,134+ data master produk dan alur kerja 7 tahap (7-stage workflow) dari requirement pelanggan hingga rekomendasi produk dan output RAB berbasis Excel.</li>
+              <li>Merancang dan mengembangkan antarmuka web responsif menggunakan HTML5, CSS3, dan Vanilla JavaScript, terintegrasi dengan REST API dan otentikasi JWT.</li>
+              <li>Melakukan pengolahan dan analisis data pada 4 sektor (Connectivity, LMS, Data Center, dan Cloud) yang menghasilkan dashboard perbandingan.</li>
+              <li>Mendukung koordinasi klien dan proyek melalui 10+ deliverables, termasuk meeting notes, laporan, penjadwalan, dan dokumentasi Notion.</li>
+            </ul>
+
+            <div class="tag-cloud">
+              <span class="tech-tag">Sales Assist</span>
+              <span class="tech-tag">Automated RAB</span>
+              <span class="tech-tag">Vanilla JavaScript</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">REST API & JWT</span>
+              <span class="tech-tag">Data Analytics</span>
+              <span class="tech-tag">Notion Docs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="ri-code-s-slash-line"></i> Portfolio Projects
+        </div>
+        <h2 class="section-title">Hasil Karya & <span class="text-gradient">Proyek Fitur</span></h2>
+        <p class="section-subtitle">
+          Koleksi proyek pengembangan aplikasi web, desain UI/UX, dan publikasi media.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+        <button class="filter-btn" data-filter="doc">Dokumentasi & Media</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1: Sales Assist -->
+        <div class="project-card" data-category="web">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);">
+            <div style="text-align: center; padding: 2rem;">
+              <i class="ri-dashboard-3-line" style="font-size: 3.5rem; color: var(--accent-light-emerald);"></i>
+              <div style="font-weight: 700; color: #fff; margin-top: 0.5rem;">Automated RAB System</div>
+            </div>
+            <span class="project-badge-type">PT Telkom Intern</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Sales Assist — Automated RAB Website</h3>
+            <p class="project-desc">
+              Sistem otomatisasi RAB mengintegrasikan 2,134+ data produk Telkom dan workflow 7-stage dari requirement pelanggan hingga generasi rekomendasi produk dan RAB Excel.
+            </p>
+            <div class="project-actions">
+              <button class="btn-icon-text open-modal-btn" data-project="sales-assist">
+                Detail Proyek <i class="ri-arrow-right-line"></i>
+              </button>
+              <span style="font-size: 0.8rem; color: var(--text-dim);">2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Kalkulator Fungsi -->
+        <div class="project-card" data-category="web">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0d3b66 0%, #051923 100%);">
+            <div style="text-align: center; padding: 2rem;">
+              <i class="ri-calculator-line" style="font-size: 3.5rem; color: var(--accent-light-emerald);"></i>
+              <div style="font-weight: 700; color: #fff; margin-top: 0.5rem;">Interactive Plotting</div>
+            </div>
+            <span class="project-badge-type">Web Application</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Web Function Calculator App</h3>
+            <p class="project-desc">
+              Aplikasi kalkulator fungsi berbasis web untuk menghitung akar, titik puncak, sumbu simetri, diskriminan & grafik interaktif.
+            </p>
+            <div class="project-actions">
+              <button class="btn-icon-text open-modal-btn" data-project="kalkulator-fungsi">
+                Detail Proyek <i class="ri-arrow-right-line"></i>
+              </button>
+              <a href="https://sofiazharia.github.io/KalkulatorLinear.github.io/kalkulus.html" target="_blank" class="btn-icon-text">
+                Live Demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: UI/UX AZZAC -->
+        <div class="project-card" data-category="uiux">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #2b2d42 0%, #1a1a2e 100%);">
+            <div style="text-align: center; padding: 2rem;">
+              <i class="ri-shopping-bag-3-line" style="font-size: 3.5rem; color: var(--accent-light-emerald);"></i>
+              <div style="font-weight: 700; color: #fff; margin-top: 0.5rem;">18 Hi-Fi Screens</div>
+            </div>
+            <span class="project-badge-type">Figma UI/UX</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">UI/UX Design E-Commerce AZZAC</h3>
+            <p class="project-desc">
+              Perancangan 18 antarmuka high-fidelity Figma untuk platform e-commerce (login, katalog, checkout, payment, profile).
+            </p>
+            <div class="project-actions">
+              <button class="btn-icon-text open-modal-btn" data-project="uiux-azzac">
+                Detail Proyek <i class="ri-arrow-right-line"></i>
+              </button>
+              <a href="https://www.figma.com/design/Y5G4NZtqrC2puecQZz37jK/--UTS-IMK--?node-id=12-221&t=rXu4XPBvopo3cppY-1" target="_blank" class="btn-icon-text">
+                Figma Link <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Smart Angkot -->
+        <div class="project-card" data-category="uiux">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #2a9d8f 0%, #134074 100%);">
+            <div style="text-align: center; padding: 2rem;">
+              <i class="ri-bus-wifi-line" style="font-size: 3.5rem; color: var(--accent-light-emerald);"></i>
+              <div style="font-weight: 700; color: #fff; margin-top: 0.5rem;">Transport Concept</div>
+            </div>
+            <span class="project-badge-type">Figma UI/UX</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">UI/UX Design Smart Angkot</h3>
+            <p class="project-desc">
+              Merancang antarmuka aplikasi transportasi publik Smart Angkot dengan alur pemilihan rute, jadwal, dan estimasi tarif.
+            </p>
+            <div class="project-actions">
+              <button class="btn-icon-text open-modal-btn" data-project="uiux-smart-angkot">
+                Detail Proyek <i class="ri-arrow-right-line"></i>
+              </button>
+              <a href="https://www.figma.com/design/lmJ5FCzoh8Y958hfDB1IeT/Prototype_Smart-Angkot?node-id=12-221&t=SmD5yMiBvSOvGITd-1" target="_blank" class="btn-icon-text">
+                Figma Link <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: MyTo-Do -->
+        <div class="project-card" data-category="uiux">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #3d5a80 0%, #1d2d44 100%);">
+            <div style="text-align: center; padding: 2rem;">
+              <i class="ri-task-line" style="font-size: 3.5rem; color: var(--accent-light-emerald);"></i>
+              <div style="font-weight: 700; color: #fff; margin-top: 0.5rem;">Task Productivity</div>
+            </div>
+            <span class="project-badge-type">Figma UI/UX</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">UI/UX Design STARTUP MyTo-Do</h3>
+            <p class="project-desc">
+              Desain platform manajemen tugas berbasis website yang responsif dan intuitif untuk meningkatkan produktivitas pengguna.
+            </p>
+            <div class="project-actions">
+              <button class="btn-icon-text open-modal-btn" data-project="uiux-mytodo">
+                Detail Proyek <i class="ri-arrow-right-line"></i>
+              </button>
+              <a href="https://www.figma.com/design/LPW1efGHr3VdbmysNzE7c1/Prototype_Smart-Angkot?node-id=12-221&t=7Wy65qZaZWD0OxEG-1" target="_blank" class="btn-icon-text">
+                Figma Link <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: KKN Kedungwuluh -->
+        <div class="project-card" data-category="doc">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #702632 0%, #3d0c11 100%);">
+            <div style="text-align: center; padding: 2rem;">
+              <i class="ri-instagram-line" style="font-size: 3.5rem; color: var(--accent-light-emerald);"></i>
+              <div style="font-weight: 700; color: #fff; margin-top: 0.5rem;">Media & Publikasi</div>
+            </div>
+            <span class="project-badge-type">KKN Publication</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">KKN 110 Kedungwuluh Documentation</h3>
+            <p class="project-desc">
+              Pengelolaan media publikasi, video recap kegiatan, visual desain feed Instagram, dan dokumentasi program KKN.
+            </p>
+            <div class="project-actions">
+              <button class="btn-icon-text open-modal-btn" data-project="kkn-kedungwuluh">
+                Detail Proyek <i class="ri-arrow-right-line"></i>
+              </button>
+              <a href="https://www.instagram.com/kkn110.kedungwuluh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="btn-icon-text">
+                Instagram <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tools Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="ri-tools-line"></i> Technical Capabilities
+        </div>
+        <h2 class="section-title">Keahlian & <span class="text-gradient">Perangkat Lunak</span></h2>
+        <p class="section-subtitle">
+          Kombinasi keahlian teknis, perangkat desain, dan soft skills yang dikuasai.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">
+            <i class="ri-code-box-line"></i> Technical Skills
+          </h3>
+          
+          <div class="skills-list">
+            <div>
+              <div class="skill-item-header">
+                <span>UI/UX Design (Figma)</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="skill-item-header">
+                <span>HTML5 & CSS3</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="skill-item-header">
+                <span>Vanilla JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="skill-item-header">
+                <span>Python (Basic & Automation)</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="75%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="skill-item-header">
+                <span>Prototyping & Wireframing</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software Tools -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">
+            <i class="ri-apps-2-line"></i> Tools & Applications
+          </h3>
+
+          <div class="tool-pills">
+            <div class="tool-pill"><i class="ri-figma-line" style="color:#f24e1e;"></i> Figma</div>
+            <div class="tool-pill"><i class="ri-code-line" style="color:#007acc;"></i> VS Code</div>
+            <div class="tool-pill"><i class="ri-video-download-line" style="color:#00f2fe;"></i> CapCut</div>
+            <div class="tool-pill"><i class="ri-file-excel-2-line" style="color:#107c41;"></i> Microsoft Excel</div>
+            <div class="tool-pill"><i class="ri-file-word-2-line" style="color:#185abd;"></i> Microsoft Word</div>
+            <div class="tool-pill"><i class="ri-file-ppt-2-line" style="color:#c43e1c;"></i> PowerPoint</div>
+            <div class="tool-pill"><i class="ri-google-line" style="color:#4285f4;"></i> Google Workspace</div>
+            <div class="tool-pill"><i class="ri-book-open-line" style="color:#fff;"></i> Notion</div>
+          </div>
+        </div>
+
+        <!-- Soft Skills & Interests -->
+        <div class="skill-category-card">
+          <h3 class="skill-category-title">
+            <i class="ri-user-star-line"></i> Soft Skills & Minat
+          </h3>
+
+          <div class="tool-pills">
+            <div class="tool-pill"><i class="ri-lightbulb-line"></i> Pemecahan Masalah</div>
+            <div class="tool-pill"><i class="ri-team-line"></i> Kolaborasi Tim</div>
+            <div class="tool-pill"><i class="ri-chat-smile-3-line"></i> Komunikasi</div>
+            <div class="tool-pill"><i class="ri-compass-3-line"></i> Berpikir Desain</div>
+            <div class="tool-pill"><i class="ri-time-line"></i> Manajemen Waktu</div>
+            <div class="tool-pill"><i class="ri-mic-line"></i> Public Speaking</div>
+            <div class="tool-pill"><i class="ri-shield-check-line"></i> Dasar K3</div>
+          </div>
+
+          <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+            <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem; color: var(--text-muted);">Minat Pengembangan:</h4>
+            <p style="font-size: 0.88rem; color: var(--text-main);">
+              Digital Innovation • Visual Media • Data Analytics • Business Consulting
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organization Experience Section -->
+  <section id="organization" class="section">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="ri-community-line"></i> Leadership & Campus Life
+        </div>
+        <h2 class="section-title">Pengalaman <span class="text-gradient">Organisasi</span></h2>
+        <p class="section-subtitle">
+          Aktif dalam kegiatan kepemimpinan, pendampingan mahasiswa, dan kepanitiaan acara.
+        </p>
+      </div>
+
+      <div class="org-grid">
+        <!-- Org 1 -->
+        <div class="org-card">
+          <div class="org-icon">
+            <i class="ri-user-follow-line"></i>
+          </div>
+          <div class="org-content">
+            <h4>Mentor — Informatics LKM</h4>
+            <div class="org-meta">2025 | Himpunan Mahasiswa Informatika</div>
+            <p>
+              Membimbing dan mendampingi 10 mahasiswa Informatika dalam mengembangkan keterampilan kepemimpinan dan manajerial organisasi sepanjang program LKM.
+            </p>
+          </div>
+        </div>
+
+        <!-- Org 2 -->
+        <div class="org-card">
+          <div class="org-icon">
+            <i class="ri-restaurant-line"></i>
+          </div>
+          <div class="org-content">
+            <h4>Divisi Konsumsi — Informatics OMBUS Committee</h4>
+            <div class="org-meta">2024 | Kepanitiaan Jurusan</div>
+            <p>
+              Mengkoordinasikan kebutuhan konsumsi untuk 50+ panitia dan tamu undangan, memastikan distribusi konsumsi berjalan lancar selama kegiatan orientasi jurusan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Org 3 -->
+        <div class="org-card">
+          <div class="org-icon">
+            <i class="ri-graduation-cap-line"></i>
+          </div>
+          <div class="org-content">
+            <h4>Mentor — Informatics MABIM</h4>
+            <div class="org-meta">2024 | Masa Bimbingan Mahasiswa Baru</div>
+            <p>
+              Mendampingi 10 mahasiswa baru Informatics dalam proses adaptasi akademik, partisipasi kegiatan kampus, dan pengenalan lingkungan perkuliahan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Org 4 -->
+        <div class="org-card">
+          <div class="org-icon">
+            <i class="ri-pantone-line"></i>
+          </div>
+          <div class="org-content">
+            <h4>Divisi Logistik & Dekorasi — Fun Gathering Informatika</h4>
+            <div class="org-meta">2023 | Event Angkatan 2023</div>
+            <p>
+              Mengelola dan mengatur 20+ item kebutuhan acara serta mengkoordinasikan dekorasi venue untuk kelancaran acara gathering tingkat departemen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div style="text-align: center;">
+        <div class="section-tag">
+          <i class="ri-mail-line"></i> Get In Touch
+        </div>
+        <h2 class="section-title">Hubungi <span class="text-gradient">Saya</span></h2>
+        <p class="section-subtitle">
+          Tertarik untuk berkolaborasi atau memiliki pertanyaan seputar proyek? Silakan kirimkan pesan Anda.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Informasi Kontak</h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ri-mail-line"></i></div>
+              <div class="contact-text">
+                <label>Email Direct</label>
+                <a href="mailto:sofiazhariamini@gmail.com">sofiazhariamini@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ri-phone-line"></i></div>
+              <div class="contact-text">
+                <label>Telepon / WhatsApp</label>
+                <a href="https://wa.me/6288220434586" target="_blank">+62 882-2043-4586</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+              <div class="contact-text">
+                <label>Lokasi Domisili</label>
+                <span>Tasikmalaya, Jawa Barat, Indonesia</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="ri-linkedin-box-line"></i></div>
+              <div class="contact-text">
+                <label>LinkedIn Profile</label>
+                <a href="https://www.linkedin.com/in/sofi-azhari-amini-247506250" target="_blank">sofi-azhari-amini</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+            <p style="font-size: 0.85rem; color: var(--text-muted);">
+              Terbuka untuk peluang magang, kerja sama proyek UI/UX Design, dan Web Development.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="about-card-glass">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Kirim Pesan</h3>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" class="form-input" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Alamat Email</label>
+              <input type="email" id="email" class="form-input" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subjek Pesan</label>
+              <input type="text" id="subject" class="form-input" placeholder="Misal: Penawaran Proyek / Pertanyaan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan Anda</label>
+              <textarea id="message" class="form-input" placeholder="Tuliskan pesan detail Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              <span>Kirim Pesan Sekarang</span>
+              <i class="ri-send-plane-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Popup Modal -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="modal-close" class="modal-close-btn">
+        <i class="ri-close-line"></i>
+      </button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notice" class="toast-notice">
+    <i class="ri-checkbox-circle-fill" style="font-size: 1.4rem;"></i>
+    <span>Terima kasih! Pesan Anda berhasil terkirim.</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="logo">
+          Sofi Azhari <span class="logo-dot"></span>
+        </a>
+
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/sofi-azhari-amini-247506250" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="mailto:sofiazhariamini@gmail.com" class="social-icon-btn" aria-label="Email">
+            <i class="ri-mail-line"></i>
+          </a>
+          <a href="https://wa.me/6288220434586" target="_blank" class="social-icon-btn" aria-label="WhatsApp">
+            <i class="ri-whatsapp-line"></i>
+          </a>
+        </div>
+
+        <p class="footer-copy">
+          &copy; 2026 Sofi Azhari Amini. All Rights Reserved. Built with HTML5, Vanilla CSS3 & JavaScript.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
